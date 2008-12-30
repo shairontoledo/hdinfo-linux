@@ -26,8 +26,9 @@ The class HdInfo extends Hash so you can do this
 
 Generates this output 
 
- serial_no = 'VB874e141d-993796f6'
- fw_rev = '1.0 VBOX HARDDISK'
+ serial_no = '0881J1FX406355"
+ fw_rev = 'TW100-11"'
  device_name = '/dev/sda'
- model = 'VBOX HARDDISK'
+ model = 'SAMSUNG SP0411N'
+
 
