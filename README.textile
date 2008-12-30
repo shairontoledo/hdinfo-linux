@@ -22,7 +22,7 @@ h2. Simple use
  require 'HdInfo'
 
  HdInfo.new('/dev/sda').each do |k,v|
-   puts "#{k} = #{v}"
+   puts "#{k} = '#{v}'"
  end
 
 Generates this output 
