@@ -1,0 +1,34 @@
+This code gets information manufacturer's about hard disks. This code runs only on Linux.
+
+Add more information if you need, I used the lib 'linux/hdreg' take a look it for more details
+ 
+h2. Installation
+
+First all, you need the packages to compile it.
+
+* ruby-dev
+* kernel-headers
+* libc6-dev
+* linux-libc-dev
+* gcc (of course)
+
+Make the manual installation downloading the last gem version hdinfo-0.3.gem.
+Install the gem with root privileges
+
+ sudo gem install hdinfo-0.3.gem
+
+h2. Simple use 
+
+ require 'HdInfo'
+
+ HdInfo.new('/dev/sda').each do |k,v|
+   puts "#{k} = #{v}"
+ end
+
+Generates this output 
+
+ serial_no = 'VB874e141d-993796f6'
+ fw_rev = '1.0 VBOX HARDDISK'
+ device_name = '/dev/sda'
+ model = 'VBOX HARDDISK'
+
