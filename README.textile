@@ -20,7 +20,7 @@ Install the gem with root privileges
 h2. Simple use 
 
  require 'HdInfo'
-
+ 
  HdInfo.new('/dev/sda').each do |k,v|
    puts "#{k} = '#{v}'"
  end
