@@ -19,11 +19,10 @@ Install the gem with root privileges
 
 h2. Simple use 
 
+The class HdInfo extends Hash so you can do this
+
  require 'HdInfo'
- 
- HdInfo.new('/dev/sda').each do |k,v|
-   puts "#{k} = '#{v}'"
- end
+ HdInfo.new('/dev/sda').each { |k,v| puts "#{k} = '#{v}'" }
 
 Generates this output 
 
